@@ -31,7 +31,7 @@ function App() {
       {/* Navbar */}
       <Navbar />
       {/* Calendar */}
-      <Calendar />
+      <Calendar events={events} />
     </div>
   );
 }

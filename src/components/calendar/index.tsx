@@ -1,7 +1,14 @@
 import React from "react";
 import Timeline from "./timeline";
+import { EventType } from "../../interfaces";
+import { useGetConcurrentEvents } from "../../hooks/useGetConcurrentEvents";
 
-const Calendar = () => {
+interface CalendarProps {
+  events: EventType[];
+}
+const Calendar: React.FC<CalendarProps> = ({ events }) => {
+  const eventsWithConcurrency = useGetConcurrentEvents(events);
+  console.log(eventsWithConcurrency);
   return (
     <div className="calendar">
       {/* Timeline */}
