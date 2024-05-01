@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./components/navbar";
 import { EventType } from "./interfaces";
+import Calendar from "./components/calendar";
 
 function App() {
   /**
@@ -30,7 +31,7 @@ function App() {
       {/* Navbar */}
       <Navbar />
       {/* Calendar */}
-    
+      <Calendar />
     </div>
   );
 }

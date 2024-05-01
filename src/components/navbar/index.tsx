@@ -2,9 +2,9 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="navbar">
+    <nav className="navbar">
       <span>Zenskar</span>
-    </div>
+    </nav>
   );
 };
 Navbar.displayName = "Navbar";
