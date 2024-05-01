@@ -7,5 +7,6 @@ const Navbar = () => {
     </div>
   );
 };
+Navbar.displayName = "Navbar";
 
 export default Navbar;
