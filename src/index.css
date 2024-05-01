@@ -10,10 +10,7 @@
   --white: #ffffffff;
   --space-cadet: #1e2948ff;
   --oxford-blue: #1c2233ff;
-  --seasalt: #f9f9f9ff;
-  --white: #ffffffff;
-  --space-cadet: #1e2948ff;
-  --oxford-blue: #1c2233ff;
+  --gray: #999999;
 }
 
 body {
@@ -69,16 +66,44 @@ body {
 }
 
 .slot > span:nth-child(2) {
-  color: gray;
+  color: var(--gray);
   font-size: 0.9rem;
   font-weight: 500;
 }
 
-.events {
+.events_container {
   position: relative;
   width: 620px;
   padding: 0 10px;
   height: 720px;
   background-color: var(--antiflash-white);
   box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+}
+.event_canvas {
+  width: 600px;
+  position: relative;
+}
+
+.event_card {
+  position: absolute;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+}
+
+.event_card_bar {
+  height: 100%;
+  background-color: var(--space-cadet);
+}
+.event_card_content {
+  background-color: var(--white);
+  padding: 1px 5px;
+}
+
+.event_card_content > h4 {
+  font-size: 0.7rem;
+}
+.event_card_content > p {
+  font-size: 0.6rem;
+  color: var(--gray);
 }

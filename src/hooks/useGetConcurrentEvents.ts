@@ -1,5 +1,11 @@
-import React from "react";
 import { EventType } from "../interfaces";
+
+/**
+ *
+ * @param events  This code will take all events then return array of events arrays.
+ *              it will combine all the concurrent events in single array and non-concurrent in different arrays
+ * @returns
+ */
 
 export const useGetConcurrentEvents = (events: EventType[]) => {
   const areConcurrent = (event1: EventType, event2: EventType) => {

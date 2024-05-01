@@ -1,4 +1,3 @@
-import React from "react";
 import Navbar from "./components/navbar";
 import { EventType } from "./interfaces";
 import Calendar from "./components/calendar";
@@ -8,6 +7,7 @@ function App() {
    *
    * Lists of Events contain start and end time.
    */
+
   const events: EventType[] = [
     { title: "Sample item", start: 10, end: 90 },
     { title: "Sample item", start: 20, end: 80 },
@@ -26,6 +26,11 @@ function App() {
     { title: "Sample item", start: 650, end: 690 },
     { title: "Sample item", start: 670, end: 710 },
   ];
+
+  /**
+   *
+   * I am Assuming the Data of Events is error free
+   */
   return (
     <div className="app">
       {/* Navbar */}
